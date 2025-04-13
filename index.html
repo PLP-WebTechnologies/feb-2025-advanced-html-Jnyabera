@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration Page</title>
+  <!-- Linking external CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>Roman Numeral List</h2>
+    <ol type="I">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+      <li>Fourth Item</li>
+      <li>Fifth Item</li>
+    </ol>
+  </section>
+
+  <!-- External Image from Pexels -->
+  <section>
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg" alt="Nature from Pexels" width="500" />
+  </section>
+
+  <!-- Table of Contacts -->
+  <section>
+    <h2>Contacts</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+       
+        <tr>
+          <td>James Nyabera</td>
+          <td>kisumu avenue</td>
+          <td>+254987654321</td>
+          <td>james@example.com</td>
+        </tr>
+        <tr>
+          <td>Charlie Bravo</td>
+          <td>kiserian 223</td>
+          <td>+25422334455</td>
+          <td>charlie@example.com</td>
+        </tr>
+        <tr>
+          <td>Diana Otieno</td>
+          <td>Ngong 111</td>
+          <td>+25423344556</td>
+          <td>diana@example.com</td>
+        </tr>
+        <tr>
+          <td>Eric kamau</td>
+          <td>avenue 1</td>
+          <td>+254444455667</td>
+          <td>eric@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Select Country--</option>
+        <option value="kenya">Kenya</option>
+        <option value="nigeria">Nigeria</option>
+        <option value="south-africa">South Africa</option>
+        <option value="ghana">Ghana</option>
+      </select>
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <label>Skills:</label>
+      <input type="checkbox" id="html" name="skills" value="HTML" />
+      <label for="html">HTML</label>
+      <input type="checkbox" id="css" name="skills" value="CSS" />
+      <label for="css">CSS</label>
+      <input type="checkbox" id="js" name="skills" value="JavaScript" />
+      <label for="js">JavaScript</label>
+
+      <br /><br />
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+</body>
+</html>
